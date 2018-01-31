@@ -1,0 +1,267 @@
+body{
+		font-family: "Courier New", Courier, monospace;
+		background-image: url("img/pozadina.jpg");
+		background-color: #263238;
+		
+	font-size: 15px;
+    line-height: 1.42857143;
+    color: #ffffff;
+}
+
+
+.container {
+	background-color: 0;
+}
+
+.col-xs-3 {
+	
+	float: relative;
+}
+
+.header {
+	height: 600px;
+	background: url('img/header_bg.jpg') no-repeat;
+	background-size: cover;
+}
+.header a {
+	font-size: 24pt;
+	color: #000000;
+	margin-top: 50px;
+	margin-left: 50px;
+	display: block;
+	text-transform: uppercase;
+}
+.header p {
+	font-size: 42pt;
+	text-align: center;
+	color: #fff;
+	margin-top: 150px;
+	text-transform: lowercase;
+}
+
+@media screen and (max-width:760px)  {
+	.header {
+		height: 300px;
+	}
+	.header p {
+		display: none;
+	}
+	.header a {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate (-50%,-50%);
+		margin: 0;
+		font-size: 14pt;
+		
+	}
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+}
+
+.main-menu {
+	width: 100%;
+	background-color: #000000;
+}
+
+.main-menu li {
+	display: inline-block;
+	height: 100px;
+	transition: 0.5s;
+}
+.main-menu li a {
+	color: #ffffff;
+	font-size: 18pt;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100px;
+	display: block;
+}
+.main-menu li:hover {
+	background-color: #ffffff;
+}
+.main-menu li:hover a {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media screen and (max-width:760px)  {
+	.main-menu {
+		padding: 0;;
+	}
+	.main-menu li {
+		display: block;
+		text-align: center;
+	}
+
+}
+
+
+.gallery img {
+	width: 100%;	
+}
+.gallery div {
+	padding: 0;
+}
+
+.overlay {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.7;
+}
+
+.image-container:hover img {
+	filter: blur(3px);
+}
+.overlay p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 18pt;
+}
+.overlay p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.contact-form {	
+	background-color: #000000;
+	padding: 100px;
+}
+.contact-form h1 {
+	font-size: 24pt;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.form-control {
+	height: 45px;
+	border-radius: 0;
+	border: 1px solid #000;
+}
+.form-control::placeholder {
+	color: #000;
+}
+.btn, .btn:hover {
+	padding: 15px 25px;
+	background-color: #737373;
+	color: #fff;
+	border-radius: 0;
+}
+.btn-default {
+	border: 0;
+}
+
+.footer {
+	height: 400px;
+	background: url('img/footer_bg.jpg') no-repeat;
+	background-size: cover;
+}
+.footer img {
+	margin: 100px 0 0 100px;
+}	
+.footer ul {
+	margin-top: 100px;
+	float: right;
+}
+.footer ul li {
+	display: inline-block;
+}
+.footer ul li a {
+	color: #fff;
+	font-size: 18pt;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+}
+
+.section {
+	margin: 50px 0;
+}
+.square-blocks div {
+	height: 185px;
+}
+.square-blocks span {
+	font-size: 50px;
+}
+
+.square-blocks a {
+  color: #000;
+}
+
+.square-blocks a:hover {
+	color: #696969;
+	text-decoration: none;
+	
+}
+.square-blocks .light-gray-bg {
+	background-color: #ffffffeb;
+}
+.square-blocks .dark-gray-bg {
+	background-color: #ffffff;
+}
+.section h1 {
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18pt;
+	color: white;
+}
+.about-me img,element.style {
+}
+
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.article img {
+	width: 100%;
+}
+.about-me div,
+.article div {
+	padding: 7;
+}
+.about-me-text,
+.article-text {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+.section-title {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
